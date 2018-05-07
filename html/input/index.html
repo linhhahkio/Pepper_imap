@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale = 1.333,minimum-scale = 1.333,maximum-scale = 1.333" />
+        <title>Question Page</title>
+
+        <!-- CSS -->
+        <style>
+            html, body {
+                height: 100%;
+
+            }
+            body {
+              margin: auto;
+              width: 50%;
+              padding: 100px 0;
+            }
+
+            form {
+
+	            text-align: center;
+              font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            }
+
+	    button {
+   	     margin-top: 35px;
+         margin-left: 125px;
+   	     text-align: center;
+   	     text-decoration: none;
+   	     display: inline-block;
+   	     font-size: 25px;
+
+	}
+
+            input[type="date"]
+	{
+    		font-size:25px;
+	}
+        </style>
+
+        <script src="/libs/qimessaging/2/qimessaging.js"></script>
+        <script src="typed.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+	<form  id="myForm">
+  		<h1>Date to search email:</h1></br>
+  		<input style ="height:50px;width:350px" type="date" name="myDate" ></br>
+	</form>
+  <p id="date_string"></p>
+  <button onclick="Submit()">Submit</button>
+    </body>
+</html>

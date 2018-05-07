@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale = 1.333,minimum-scale = 1.333,maximum-scale = 1.333" />
+        <title>Text</title>
+
+        <!-- CSS -->
+        <style>
+            html, body {
+                height: 100%;
+		text-align: center;
+		font-size: 25px;
+
+            }
+            body {
+                margin: 0;
+            }
+            
+		/* Stick back bottom to end of page*/
+		.button {
+		    position: absolute;
+		    bottom: 10px;
+		    right:0;
+		    width: 100px;
+		    height: 100px;
+			
+		}
+
+        </style>
+
+        <script src="/libs/qimessaging/2/qimessaging.js"></script>
+        <script src="typed.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+	<p id="text_attachment"></p>
+	<image class="button" src="reply.png" onclick="goBack()">
+
+	<script>
+	function goBack() {
+    		window.history.back();
+	}
+	</script>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale = 1.333,minimum-scale = 1.333,maximum-scale = 1.333" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>Question Page</title>
+
+        <!-- CSS -->
+        <style>
+            html, body {
+                height: 100%;
+
+            }
+            body {
+                margin: 0;
+		padding-top: 70px;
+		text-align: center;
+		font-weight: bold;
+		font-size: 25px;
+            }
+           
+		.row{
+    		overflow: hidden; 
+		}
+
+		[class*="col-"]{
+   		 margin-bottom: -99999px;
+    		padding-bottom: 99999px;
+		}
+
+		li {padding-top: 25px;}
+
+		/* Stick back bottom to end of page*/
+		.button {
+		    position: absolute;
+		    bottom: 10px;
+		    right:0;
+		    width: 100px;
+		    height: 100px;
+			
+		}
+
+        </style>
+
+        <script src="/libs/qimessaging/2/qimessaging.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+	<div class="row">
+    		<div class="col-xs-4" style="background-color:lavender;">
+			<ul>
+			</ul>	
+		</div>
+    		<div class="col-xs-8" style="background-color:lavender;" >
+			<div class="row">
+            			<div class="col-xs-12">
+                			<img class="img-responsive" src="audio_spin.gif" alt="Spinning disk">
+            			</div>	
+        		</div>
+			<div class="row">
+            			<div class="col-xs-12">
+               				 
+            			</div>
+        		</div>
+		</div>
+  	</div>
+	<image class="button" src="reply.png" onclick="goBack()">
+
+	<script>
+	function goBack() {
+    		window.history.back();
+	}
+	</script>
+    </body>
+</html>

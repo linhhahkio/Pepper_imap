@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale = 1.333,minimum-scale = 1.333,maximum-scale = 1.333" /> -->
+        <title>Viestisivu</title>
+
+        <!-- CSS -->
+        <style>
+            html, body {
+                height: 100%;
+
+            }
+            body {
+                margin: 0;
+            }
+            
+
+	        #subject {
+            font-size: 30px;
+            font-weight: bold;
+            }
+
+            #message {
+              padding-top: 30px;
+              border-bottom: 2px solid;
+			  font-size: 20px;
+			}
+
+            #sender {
+              font-weight: bold;
+			  font-size: 25px;
+            }
+
+            #date {
+              text-align: right;
+            }
+
+			/* This is the sender's email address, hidden for now for Javascript and to be used later on */
+			#email {
+			  visibility: hidden;
+			  font-size:0;
+			}
+			
+            table {
+              margin-left: 5%;
+              margin-top: 30px;
+              margin-right: 5%;
+              color: rgb(34, 33, 33);
+              font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+              background-color: #ffffff;
+              padding: 0px;
+            }
+
+            th {
+              text-align: left;
+              border-bottom: 2px solid;
+			  padding-top: 20px;
+			  padding-bottom: 20px;
+            }
+
+        </style>
+
+        <script src="/libs/qimessaging/2/qimessaging.js"></script>
+        <script src="typed.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+
+      <table style="width:90%">
+  <tr>
+    <td id="sender"></td>
+    <td id="date"></td>
+  </tr>
+	  
+  <tr>
+    <th colspan="2" id="subject"></th>
+  </tr>
+  <tr>
+    <td colspan="2" id="email"></td>
+  </tr>
+  <tr>
+    <td colspan="2" id="message"></td>
+  </tr>
+</table>
+</body>
+</html>

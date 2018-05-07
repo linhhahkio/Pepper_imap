@@ -1,0 +1,15 @@
+topic: ~Next_Previous_command()
+language: fif
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+u:(e:onStart) ^gotoReactivate(tag)
+
+proposal: %tag Sano "Seuraava" tai "edellinen" muuttaaksesi tiedostoa.\pau=500\ Sano "lopettaa" lopettaaksesi liitteen tarkistamisen.
+# Replying to speech
+    u1:(seuraava) $next=1 ^stayInScope
+    u1:(edellinen) $previous=1 ^stayInScope
+    u1:(lopettaa) $onStopped=1 ^stayInScope
+    u1:(muita tiedostoja) $back=1 ^stayInScope
