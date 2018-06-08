@@ -33,6 +33,15 @@
         </message>
     </context>
     <context>
+        <name>behavior_1/behavior.xar:/Play video</name>
+        <message>
+            <location filename="behavior_1/behavior.xar" line="0"/>
+            <source>Haluatko minun pelata näitä videoita?</source>
+            <comment>Text</comment>
+            <translation type="unfinished"></translation>
+        </message>
+    </context>
+    <context>
         <name>behavior_1/behavior.xar:/Read text</name>
         <message>
             <location filename="behavior_1/behavior.xar" line="0"/>
@@ -65,12 +74,6 @@
             <source>Hello</source>
             <comment>Text</comment>
             <translation type="vanished">Hei</translation>
-        </message>
-        <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
-            <source>Haluatko lähettää uuden sähköpostin?</source>
-            <comment>Text</comment>
-            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -111,6 +114,15 @@
             <source>Hello</source>
             <comment>Text</comment>
             <translation type="vanished">Hei</translation>
+        </message>
+    </context>
+    <context>
+        <name>behavior_1/behavior.xar:/Say: Send email</name>
+        <message>
+            <location filename="behavior_1/behavior.xar" line="0"/>
+            <source>Haluatko lähettää uuden sähköpostin?</source>
+            <comment>Text</comment>
+            <translation type="unfinished"></translation>
         </message>
     </context>
 </TS>

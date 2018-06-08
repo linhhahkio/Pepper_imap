@@ -38,6 +38,23 @@
         </message>
     </context>
     <context>
+        <name>behavior_1/behavior.xar:/Play audio (1)</name>
+        <message>
+            <source>Haluatko minun pelata näitä videoita?</source>
+            <comment>Text</comment>
+            <translation type="obsolete">Haluatko minun pelata näitä videoita?</translation>
+        </message>
+    </context>
+    <context>
+        <name>behavior_1/behavior.xar:/Play video</name>
+        <message>
+            <location filename="behavior_1/behavior.xar" line="0"/>
+            <source>Haluatko minun pelata näitä videoita?</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Haluatko minun pelata näitä videoita?</translation>
+        </message>
+    </context>
+    <context>
         <name>behavior_1/behavior.xar:/Read text</name>
         <message>
             <location filename="behavior_1/behavior.xar" line="0"/>
@@ -77,10 +94,9 @@
             <translation type="obsolete">yhdestä viiteen, joista haluat lukea?</translation>
         </message>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>Haluatko lähettää uuden sähköpostin?</source>
             <comment>Text</comment>
-            <translation type="unfinished">Haluatko lähettää uuden sähköpostin?</translation>
+            <translation type="obsolete">Haluatko lähettää uuden sähköpostin?</translation>
         </message>
     </context>
     <context>
@@ -151,6 +167,15 @@
             <source>Hello</source>
             <comment>Text</comment>
             <translation type="vanished">Hello</translation>
+        </message>
+    </context>
+    <context>
+        <name>behavior_1/behavior.xar:/Say: Send email</name>
+        <message>
+            <location filename="behavior_1/behavior.xar" line="0"/>
+            <source>Haluatko lähettää uuden sähköpostin?</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Haluatko lähettää uuden sähköpostin?</translation>
         </message>
     </context>
 </TS>

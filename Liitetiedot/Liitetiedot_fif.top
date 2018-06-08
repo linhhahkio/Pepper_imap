@@ -8,8 +8,9 @@ language: fif
 u:(e:onStart) ^gotoReactivate(tag)
 
 # Replying to speech
-proposal: %tag kuva, ääni tai teksti, jonka haluat avata?
+proposal: %tag minkälainen liitetiedosto haluatko minun avata?
     u1:(kuva) $onStopped = "image"
     u1:(ääni) $onStopped = "audio"
     u1:(teksti) $onStopped = "text"
+    u1:(video) $onStopped = "video"
     u1:(lopettaa) $onStopped = "stop"

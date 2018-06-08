@@ -1,3 +1,4 @@
+src="/libs/qimessaging/2/qimessaging.js"
 // global session
 var session = new QiSession(function(session) {
                 // document.getElementById('typed').innerHTML = "Connection esterblished!";

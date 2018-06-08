@@ -12,4 +12,4 @@ proposal: %tag Sano "Seuraava" tai "edellinen" muuttaaksesi tiedostoa.\pau=500\ 
     u1:(seuraava) $next=1 ^stayInScope
     u1:(edellinen) $previous=1 ^stayInScope
     u1:(lopettaa) $onStopped=1 ^stayInScope
-    u1:(muita tiedostoja) $back=1 ^stayInScope
+    u1:(muita tiedostoja) $back=1 $onBack=1
