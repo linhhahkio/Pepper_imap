@@ -18,15 +18,9 @@ session.service("ALMemory").then(function(ALMemory) {
 
    for (var i = 0; i < len_list_image ; i++)
 	{
-		var div1 = document.createElement("div");
-    		div1.className = "responsive";
 
 		var div2 = document.createElement("div");
     		div2.className = "gallery";
-
-		var div3 = document.createElement("div");
-		div3.className = "desc";
-		div3.innerHTML = String(x[i]);
 
  		var img = document.createElement("img");
 		img.src = String(x[i]);
@@ -35,9 +29,7 @@ session.service("ALMemory").then(function(ALMemory) {
     		img.onclick = function() {myFunction(this);};
 
     		div2.appendChild(img);
-		div2.appendChild(div3);
-		div1.appendChild(div2);
-		document.body.appendChild(div1);
+		document.body.appendChild(div2);
 
 	}
 

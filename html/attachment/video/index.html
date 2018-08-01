@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale = 1.333,minimum-scale = 1.333,maximum-scale = 1.333" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>Question Page</title>
+
+        <!-- CSS -->
+        <style>
+            html, body {
+                height: 100%;
+
+            }
+            body {
+                margin: 0;
+		padding-top: 50px;
+		text-align: center;
+		font-weight: bold;
+		font-size: 150%;
+            }
+           button {
+		border-radius: 25px;
+  		display: inline-block;
+  		width: 300px;
+  		height: 50;
+  		background-color: #0000e6;
+  		color: white;
+  		text-align: center;
+  		font-family: Arial, Helvetica, sans-serif;
+  		font-size: 30px;
+  		font-style: normal;
+  		font-weight: bold;
+  		line-height: 50px;
+		padding: 5px;
+		}
+        </style>
+
+        <script src="/libs/qimessaging/2/qimessaging.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+	<div class="row">
+    		<div class="col-xs-3" style="background-color:lavender;">
+			<img class="img-responsive" id = "text" src="text.png" alt="Text file" onclick="show_Text()">
+			<p id="text_num"></p>		
+		</div>
+    		<div class="col-xs-3" style="background-color:lavenderblush;">
+			<img class="img-responsive" id = "audio" src="audio.png" alt="Audio file" onclick="show_Audio()">
+			<p id="audio_num"></p>
+		</div>
+    		<div class="col-xs-3" style="background-color:lavender;">
+			<img class="img-responsive" id = "image" src="image.png" alt="Image file" onclick="show_Image()">
+			<p id="image_num"></p>
+		</div>
+		<div class="col-xs-3" style="background-color:lavenderblush;">
+			<img class="img-responsive" id = "video" src="video.png" alt="Video file" onclick="show_Video()">
+			<p id="video_num"></p>
+		</div>
+  	</div>
+	<div class="row">
+		<div class="col-xs-12">
+		<p id="unsupport_num" style="padding-top:25px;"></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12">
+		<button onclick="Stop()">Lopettaa</button>
+		</div>
+	</div>
+    </body>
+</html>

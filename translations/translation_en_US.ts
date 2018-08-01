@@ -21,6 +21,32 @@
         </message>
     </context>
     <context>
+        <name>behavior_1/behavior.xar:/Animated Say (1)</name>
+        <message>
+            <source>Hello</source>
+            <comment>Text</comment>
+            <translation type="vanished">Hello</translation>
+        </message>
+    </context>
+    <context>
+        <name>behavior_1/behavior.xar:/Ask about attachment</name>
+        <message>
+            <location filename="behavior_1/behavior.xar" line="0"/>
+            <source>Tässä viestissä on mukana liite. Haluatko nähdä sen?</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Tässä viestissä on mukana liite. Haluatko nähdä sen?</translation>
+        </message>
+    </context>
+    <context>
+        <name>behavior_1/behavior.xar:/Audio attachment/Play audio</name>
+        <message>
+            <location filename="behavior_1/behavior.xar" line="0"/>
+            <source>Haluatko minun pelata näitä äänitiedostoja?</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Haluatko minun pelata näitä äänitiedostoja?</translation>
+        </message>
+    </context>
+    <context>
         <name>behavior_1/behavior.xar:/Get Localized Text</name>
         <message>
             <source>Hello</source>
@@ -31,19 +57,33 @@
     <context>
         <name>behavior_1/behavior.xar:/Play audio</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>Haluatko minun pelata näitä äänitiedostoja?</source>
             <comment>Text</comment>
-            <translation type="unfinished">Haluatko minun pelata näitä äänitiedostoja?</translation>
+            <translation type="obsolete">Haluatko minun pelata näitä äänitiedostoja?</translation>
+        </message>
+    </context>
+    <context>
+        <name>behavior_1/behavior.xar:/Play audio (1)</name>
+        <message>
+            <source>Haluatko minun pelata näitä videoita?</source>
+            <comment>Text</comment>
+            <translation type="obsolete">Haluatko minun pelata näitä videoita?</translation>
+        </message>
+    </context>
+    <context>
+        <name>behavior_1/behavior.xar:/Play video</name>
+        <message>
+            <source>Haluatko minun pelata näitä videoita?</source>
+            <comment>Text</comment>
+            <translation type="obsolete">Haluatko minun pelata näitä videoita?</translation>
         </message>
     </context>
     <context>
         <name>behavior_1/behavior.xar:/Read text</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>Haluatko, että luen tekstitiedostoani?</source>
             <comment>Text</comment>
-            <translation type="unfinished">Haluatko, että luen tekstitiedostoani?</translation>
+            <translation type="obsolete">Haluatko, että luen tekstitiedostoani?</translation>
         </message>
     </context>
     <context>
@@ -58,10 +98,9 @@
     <context>
         <name>behavior_1/behavior.xar:/Reply (1)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>Haluatko vastata tähän sähköpostiviestiin?</source>
             <comment>Text</comment>
-            <translation type="unfinished">Haluatko vastata tähän sähköpostiviestiin?</translation>
+            <translation type="obsolete">Haluatko vastata tähän sähköpostiviestiin?</translation>
         </message>
     </context>
     <context>
@@ -77,10 +116,15 @@
             <translation type="obsolete">yhdestä viiteen, joista haluat lukea?</translation>
         </message>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>Haluatko lähettää uuden sähköpostin?</source>
             <comment>Text</comment>
-            <translation type="unfinished">Haluatko lähettää uuden sähköpostin?</translation>
+            <translation type="obsolete">Haluatko lähettää uuden sähköpostin?</translation>
+        </message>
+        <message>
+            <location filename="behavior_1/behavior.xar" line="0"/>
+            <source>Haluatko tarkistaa muita liitteitä?</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Haluatko tarkistaa muita liitteitä?</translation>
         </message>
     </context>
     <context>
@@ -151,6 +195,33 @@
             <source>Hello</source>
             <comment>Text</comment>
             <translation type="vanished">Hello</translation>
+        </message>
+    </context>
+    <context>
+        <name>behavior_1/behavior.xar:/Say: Send email</name>
+        <message>
+            <location filename="behavior_1/behavior.xar" line="0"/>
+            <source>Haluatko lähettää uuden sähköpostin?</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Haluatko lähettää uuden sähköpostin?</translation>
+        </message>
+    </context>
+    <context>
+        <name>behavior_1/behavior.xar:/Text attachment/Read text</name>
+        <message>
+            <location filename="behavior_1/behavior.xar" line="0"/>
+            <source>Haluatko, että luen tekstitiedostoani?</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Haluatko, että luen tekstitiedostoani?</translation>
+        </message>
+    </context>
+    <context>
+        <name>behavior_1/behavior.xar:/Video attachment/Play video</name>
+        <message>
+            <location filename="behavior_1/behavior.xar" line="0"/>
+            <source>Haluatko minun pelata näitä videoita?</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Haluatko minun pelata näitä videoita?</translation>
         </message>
     </context>
 </TS>

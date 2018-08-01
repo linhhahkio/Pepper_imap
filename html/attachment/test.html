@@ -11,16 +11,18 @@
         <!-- CSS -->
         <style>
 
-    body {
-         margin-top: 75px;
-         text-align: center;
-
+		body {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         margin-right: -50%;
+         transform: translate(-50%, -50%);
+         margin:auto;
     }
 		div.gallery {
 			width: 200px;
     			height: auto;
-			margin: 10px;
-
+			border: 0px solid #ccc;
 		}
 
 		div.gallery:hover {
@@ -31,7 +33,6 @@
     			width: 200px;
     			height: 200px;
 			max-height: 200px;
-			
 		}
 
 
@@ -39,33 +40,12 @@
 		    text-align: center;
  		    word-wrap: break-word;
         	    font-weight: bold;
-		    font-size: 25px;
-		}
-
-		* {
-		    box-sizing: border-box;
 		}
 
 		.responsive {
-		    display: -webkit-box;
-		    display: -moz-box;
-		    display: -ms-flexbox;
-		    display: -webkit-flex;
-		    flex-flow: row wrap;
-		    display: flex;
-		    justify-content: center;
-		}
-
-		@media only screen and (max-width: 700px) {
-		    .responsive {
-			width: 49.99999%;
-		    }
-		}
-
-		@media only screen and (max-width: 500px) {
-		    .responsive {
-			width: 100%;
-		    }
+		    padding: 0 6px;
+		    padding-right: 20px;	
+		    float: left;
 		}
 
 
@@ -76,5 +56,19 @@
     	</head>
 
     <body>
+	<div class = "responsive">
+	<div class = "gallery">
+	<img src = "image.png">
+	<div class = "desc">
+	</div>
+	</div>
+	</div>
+	<div class = "responsive">
+	<div class = "gallery">
+	<img src = "image.png">
+	<div class = "desc">
+	</div>
+	</div>
+	</div>
     </body>
 </html>

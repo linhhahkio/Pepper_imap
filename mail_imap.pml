@@ -13,9 +13,6 @@
         <File name="index" src="html/index.html" />
         <File name="script" src="html/script.js" />
         <File name="typed.min" src="html/typed.min.js" />
-        <File name="index2" src="html/index2.html" />
-        <File name="loading" src="html/image/loading.gif" />
-        <File name="script2" src="html/script2.js" />
         <File name="index" src="html/input/index.html" />
         <File name="script" src="html/input/script.js" />
         <File name="audio" src="html/attachment/audio.png" />
@@ -40,6 +37,10 @@
         <File name="typed.min" src="html/attachment/text/single_text/typed.min.js" />
         <File name="index" src="html/posti/index.html" />
         <File name="posti" src="html/posti/posti.svg" />
+        <File name="video" src="html/attachment/video.png" />
+        <File name="index" src="html/attachment/video/index.html" />
+        <File name="test" src="html/attachment/test.html" />
+        <File name="mail_imap_readme" src="mail_imap_readme" />
     </Resources>
     <Topics>
         <Topic name="Confirm_fif" src="Confirm/Confirm_fif.top" topicName="Confirm" language="fi_FI" />
