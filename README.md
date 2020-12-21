@@ -43,12 +43,13 @@ retrieves the user id and pass and login to the mail box. It then checks if ther
 	* If user do not want to send email -> output "output_2" -> Stop this "Read email" application and go back to "Start up" application
     
 2.2 If there is no new mail, the programs ask if the user want to read previous mails or send new mail
-	-> "Check mail" box triggers output "onNoMail" informs user that he/she has no mail and ask if they want to read previous mail 
-	-> "Confirm" box
-		* If user agrees -> "-> output "output_1"
-			-> input "check_all" of "Check mail" box is trigger, gets all the emails in inbox and mails's unique id, its corresponding sender and subject into a list.
-			Then the loops starts the same as described in SECTION 2.1.1
-		* If user do not want to read previous mails -> output "output_2" -> "send email" as described in SECTION 2.1.2
+-> "Check mail" box triggers output "onNoMail" informs user that he/she has no mail and ask if they want to read previous mail 
+
+-> "Confirm" box
+	* If user agrees -> "-> output "output_1"
+		-> input "check_all" of "Check mail" box is trigger, gets all the emails in inbox and mails's unique id, its corresponding sender and subject into a list.
+		Then the loops starts the same as described in SECTION 2.1.1
+	* If user do not want to read previous mails -> output "output_2" -> "send email" as described in SECTION 2.1.2
     
 ### 3. "Get mail" get the uid of the chosen uid from the memory, fetch the email
 - Output email's body including sender, time, subject and message as a string -> output "onStopped" -> "Say email out loud" box
