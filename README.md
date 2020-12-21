@@ -65,8 +65,8 @@ retrieves the user id and pass and login to the mail box. It then checks if ther
 		-> "Ask about attachment" box inform user that the email contains attachment and ask if he/she want to see it.
 		-> "Confirm" box
 		* If user agrees -> output "output_1"
-			+ "Animated Say" box Pepper informs user that attachments might be heavy and might require sometime to load
-			+ "Get attachment" box gets the list of attachments from the memory.
+		+ "Animated Say" box Pepper informs user that attachments might be heavy and might require sometime to load
+		+ "Get attachment" box gets the list of attachments from the memory.
 			-> "Extract attachment" box -> see PART 2
 		* If user do not want to open attachment -> output "output_2"
 			-> "Reply" box -> PART C
@@ -76,6 +76,7 @@ retrieves the user id and pass and login to the mail box. It then checks if ther
 ### 1. "Extract attachment" box 
 - catagorize attachments into audio, picture, video or text file using the file's ending.
 - Store attachments in seperate lists based on type. 
+
 1.1 If there is single type of attachment.
 -> output "onType"
 -> "Switch case" proceeds programs depends on attachments' type
@@ -108,14 +109,14 @@ retrieves the user id and pass and login to the mail box. It then checks if ther
 					-> In this case there is only one type of attachment -> output "reply" 
 					-> "Reply" box -> PART C
 		B. Open the file
-			- "Say Text File" says the text file out loud. -> loop back to PART A
-			- "Tactile Head" box to stop the "Say Text File" if user do not want to listen to that anymore.
-			- "Show Text File" shows the text file on the tablet. 
+		- "Say Text File" says the text file out loud. -> loop back to PART A
+		- "Tactile Head" box to stop the "Say Text File" if user do not want to listen to that anymore.
+		- "Show Text File" shows the text file on the tablet. 
 		C. Reply to email
-			- "Reply" box: ask if user want to reply to this email.4
-			- "Confirm" box
-				* If user agrees -> output "output_1" -> "Run send email" box : run "Send emai" application
-				* If user do not want to reply to the email -> output "output_2" -> Loop back to "Check mail" box to start checking mail again (see PART 1, 2.1)  	
+		- "Reply" box: ask if user want to reply to this email.4
+		- "Confirm" box
+			* If user agrees -> output "output_1" -> "Run send email" box : run "Send emai" application
+			* If user do not want to reply to the email -> output "output_2" -> Loop back to "Check mail" box to start checking mail again (see PART 1, 2.1)  
 	1.1.2 Audio
 		-> output "output_2" of "Switch case" -> "Audio attachment" timeline box
 		A. Loop process: Similar to process to SECTION 1.1.1
