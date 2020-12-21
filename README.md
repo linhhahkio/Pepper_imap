@@ -92,79 +92,96 @@ retrieves the user id and pass and login to the mail box. It then checks if ther
 
 A. Loop process
 
-	1. "Show attachment list" box shows the list of all attachment on the tablet (html/attachment/text/index.html)
-	2.  
-		- "Subscribe to choose_text" box gets signal if user chooses the text file he/she wants to open through tablet -> "File loop" box (See A.3 below)
-		- "Read text" box ask if user want to read these text files. -> "Confirm" box
-		* If user agrees ->  output "output_1" -> "File loop" box (See A.3 below)
-		* If user do not want to read text file -> output "output_2" -> "Reply" box -> PART C
-		3."File loop" box: Get the text attachment list from the memory, loops through the attachment list.
-		3.1 Start loop
-		-> output "out_file_loop" 
-		-> "List loop" box tells user the name of the attachment and ask if they want to open that specific one.
-		-> "Confirm" box
-			* If user agrees -> output "output_1" 
-				-> input "file_name" of "File loop" box to get the name of the file (go through this box again so we do not have to store so many thing in the memory) -> output "out_read_text" carries the name of chosen attachment to the next box -> PART B, 1.1.1
-			* If user do not want to read this text file -> output "output_2" 
-				-> loop back to input "onStart" of "File loop" box -> PART A, 1.1.1
-		3.2 End of loop
-		When the loop go through all of the attachment files, next turn output "out_end_loop" will be trigger instead of "out_file_loop"
-		-> "End list" box informs user that this is the end of the list and ask if the user want to start going through it again.
-		-> "Confirm" box
-			* If user agrees -> output "output_1" -> Loop back to input "onStart" of "File loop" box -> PART A, 1.1.1
-			* If user do not want to continue going through text attachment -> output "output_2"
-				-> output "output_reply" of timeline box "text attachment"
-				-> "Check other type" box check if there is other type of attachment
-				-> In this case there is only one type of attachment -> output "reply" 
-				-> "Reply" box -> PART C
-B. Open the file
-	- "Say Text File" says the text file out loud. -> loop back to PART A
-	- "Tactile Head" box to stop the "Say Text File" if user do not want to listen to that anymore.
-	- "Show Text File" shows the text file on the tablet. 
-C. Reply to email
-	- "Reply" box: ask if user want to reply to this email.4
-	- "Confirm" box
-	* If user agrees -> output "output_1" -> "Run send email" box : run "Send emai" application
-	* If user do not want to reply to the email -> output "output_2" -> Loop back to "Check mail" box to start checking mail again (see PART 1, 2.1)  
-			
-1.1.2 Audio
-	-> output "output_2" of "Switch case" -> "Audio attachment" timeline box
-	A. Loop process: Similar to process to SECTION 1.1.1
-	1. "Show attachment list" box shows the list of all attachment on the tablet (html/attachment/audio/index.html)
-    	2.  
-	- "Subscribe to choose_audio" box gets signal if user chooses the text file he/she wants to open through tablet -> "File loop" box (See A.3 below)
-	- "Play audio" box ask if user want to play these audio files. -> "Confirm" box
-	* If user agrees ->  output "output_1" -> "File loop" box (See A.3 below)
-	* If user do not want to read text file -> output "output_2" -> "Reply" box -> PART C
-	3."File loop" box: Get the audio attachment list from the memory, loops through the attachment list.
+1. "Show attachment list" box shows the list of all attachment on the tablet (html/attachment/text/index.html)
+2.  
+- "Subscribe to choose_text" box gets signal if user chooses the text file he/she wants to open through tablet -> "File loop" box (See A.3 below)
+- "Read text" box ask if user want to read these text files. -> "Confirm" box
+* If user agrees ->  output "output_1" -> "File loop" box (See A.3 below)
+* If user do not want to read text file -> output "output_2" -> "Reply" box -> PART C
+3."File loop" box: Get the text attachment list from the memory, loops through the attachment list.
 	3.1 Start loop
 	-> output "out_file_loop" 
 	-> "List loop" box tells user the name of the attachment and ask if they want to open that specific one.
 	-> "Confirm" box
 	* If user agrees -> output "output_1" 
-		-> input "file_name" of "File loop" box to get the name of the file (go through this box again so we do not have to store so many thing in the memory) -> output "out_read_text" carries the name of chosen attachment to the next box -> PART B, 1.1.1
+	-> input "file_name" of "File loop" box to get the name of the file (go through this box again so we do not have to store so many thing in the memory) -> output "out_read_text" carries the name of chosen attachment to the next box -> PART B, 1.1.1
 	* If user do not want to read this text file -> output "output_2" 
-		-> loop back to input "onStart" of "File loop" box -> PART A, 1.1.1
+	-> loop back to input "onStart" of "File loop" box -> PART A, 1.1.1
 	3.2 End of loop
 	When the loop go through all of the attachment files, next turn output "out_end_loop" will be trigger instead of "out_file_loop"
 	-> "End list" box informs user that this is the end of the list and ask if the user want to start going through it again.
 	-> "Confirm" box
 	* If user agrees -> output "output_1" -> Loop back to input "onStart" of "File loop" box -> PART A, 1.1.1
 	* If user do not want to continue going through text attachment -> output "output_2"
-		-> output "output_reply" of timeline box "audio attachment"
-		-> "Check other type" box check if there is other type of attachment
-		-> In this case there is only one type of attachment -> output "reply" 
-		-> "Reply" box -> PART C
-	B. Open the file
-	- "Play Sound" box plays the audio file through speaker -> loop back to PART A
-	- "Tactile Head" box to stop the "Say Text File" if user do not want to listen to that anymore. 
-	C. Reply to email
-	See PART 2, 1.1.1 PART C
+	-> output "output_reply" of timeline box "text attachment"
+	-> "Check other type" box check if there is other type of attachment
+	-> In this case there is only one type of attachment -> output "reply" 
+	-> "Reply" box -> PART C
+B. Open the file
+- "Say Text File" says the text file out loud. -> loop back to PART A
+- "Tactile Head" box to stop the "Say Text File" if user do not want to listen to that anymore.
+- "Show Text File" shows the text file on the tablet. 
+C. Reply to email
+- "Reply" box: ask if user want to reply to this email.4
+- "Confirm" box
+* If user agrees -> output "output_1" -> "Run send email" box : run "Send emai" application
+* If user do not want to reply to the email -> output "output_2" -> Loop back to "Check mail" box to start checking mail again (see PART 1, 2.1)  
+			
+1.1.2 Audio
+-> output "output_2" of "Switch case" -> "Audio attachment" timeline box
+
+A. Loop process: Similar to process to SECTION 1.1.
+
+1. "Show attachment list" box shows the list of all attachment on the tablet (html/attachment/audio/index.html)
+
+2.  
+- "Subscribe to choose_audio" box gets signal if user chooses the text file he/she wants to open through tablet -> "File loop" box (See A.3 below)
+- "Play audio" box ask if user want to play these audio files. -> "Confirm" box
+* If user agrees ->  output "output_1" -> "File loop" box (See A.3 below)
+* If user do not want to read text file -> output "output_2" -> "Reply" box -> PART C
+
+3."File loop" box: Get the audio attachment list from the memory, loops through the attachment list.
+3.1 Start loop
+-> output "out_file_loop" 
+-> "List loop" box tells user the name of the attachment and ask if they want to open that specific one.
+-> "Confirm" box
+* If user agrees -> output "output_1" 
+
+-> input "file_name" of "File loop" box to get the name of the file (go through this box again so we do not have to store so many thing in the memory) -> output "out_read_text" carries the name of chosen attachment to the next box -> PART B, 1.1.1
+* If user do not want to read this text file -> output "output_2" 
+-> loop back to input "onStart" of "File loop" box -> PART A, 1.1.1
+
+3.2 End of loop
+When the loop go through all of the attachment files, next turn output "out_end_loop" will be trigger instead of "out_file_loop"
+
+-> "End list" box informs user that this is the end of the list and ask if the user want to start going through it again.
+
+-> "Confirm" box
+
+* If user agrees -> output "output_1" -> Loop back to input "onStart" of "File loop" box -> PART A, 1.1.1
+* If user do not want to continue going through text attachment -> output "output_2"
+-> output "output_reply" of timeline box "audio attachment"
+
+-> "Check other type" box check if there is other type of attachment
+
+-> In this case there is only one type of attachment -> output "reply" 
+
+-> "Reply" box -> PART C
+
+B. Open the file
+- "Play Sound" box plays the audio file through speaker -> loop back to PART A
+- "Tactile Head" box to stop the "Say Text File" if user do not want to listen to that anymore. 
+
+C. Reply to email
+See PART 2, 1.1.1 PART C
 	
 1.1.3 Image
 -> output "output_3" of "Switch case" 
+
 -> "Images attachment" box and "Next_Previous_command" dialog box
+
 - "Images attachment" box get the image attachment list from the memory and shows it on the tablet (html/attachment/image/index.html)
+
 - "Next_Previous_command" box listens to command from user:
 	1. to view next/previous picture 
 	2. to go back to attachment overview page
@@ -172,53 +189,64 @@ C. Reply to email
 	
 1.1.4 Video
 -> output "output_5" of "Switch case" -> "Video attachment" timeline box
+
 A. Loop process: Similar to process to SECTION 1.1.1
-	1. "Show attachment list" box shows the list of all attachment on the tablet (html/attachment/audio/index.html)
-	2.  
-	- "Subscribe to choose_audio" box gets signal if user chooses the text file he/she wants to open through tablet -> "File loop" box (See A.3 below)
-	- "Play video" box ask if user want to play these video files. -> "Confirm" box
-	* If user agrees ->  output "output_1" -> "File loop" box (See A.3 below)
-	* If user do not want to read text file -> output "output_2" -> "Reply" box -> PART C
-	3."File loop" box: Get the video attachment list from the memory, loops through the attachment list.
-		3.1 Start loop
-		-> output "out_file_loop" 
-		-> "List loop" box tells user the name of the attachment and ask if they want to open that specific one.
-		-> "Confirm" box
-		* If user agrees -> output "output_1" 
-			-> input "file_name" of "File loop" box to get the name of the file (go through this box again so we do not have to store so many thing in the memory) -> output "out_read_text" carries the name of chosen attachment to the next box -> PART B, 1.1.1
-		* If user do not want to read this text file -> output "output_2" 
-			-> loop back to input "onStart" of "File loop" box -> PART A, 1.1.1
-		3.2 End of loop
-		When the loop go through all of the attachment files, next turn output "out_end_loop" will be trigger instead of "out_file_loop"
-		-> "End list" box informs user that this is the end of the list and ask if the user want to start going through it again.
-		-> "Confirm" box
-		* If user agrees -> output "output_1" -> Loop back to input "onStart" of "File loop" box -> PART A, 1.1.1
-		* If user do not want to continue going through video attachment -> output "output_2"
-			-> output "output_reply" of timeline box "audio attachment"
-			-> "Check other type" box check if there is other type of attachment
-			-> In this case there is only one type of attachment -> output "reply" 
-			-> "Reply" box -> PART C
+
+1. "Show attachment list" box shows the list of all attachment on the tablet (html/attachment/audio/index.html)
+2.  
+- "Subscribe to choose_audio" box gets signal if user chooses the text file he/she wants to open through tablet -> "File loop" box (See A.3 below)
+- "Play video" box ask if user want to play these video files. -> "Confirm" box
+* If user agrees ->  output "output_1" -> "File loop" box (See A.3 below)
+* If user do not want to read text file -> output "output_2" -> "Reply" box -> PART C
+3."File loop" box: Get the video attachment list from the memory, loops through the attachment list.
+
+3.1 Start loop
+-> output "out_file_loop" 
+-> "List loop" box tells user the name of the attachment and ask if they want to open that specific one.
+-> "Confirm" box
+* If user agrees -> output "output_1" 
+-> input "file_name" of "File loop" box to get the name of the file (go through this box again so we do not have to store so many thing in the memory) -> output "out_read_text" carries the name of chosen attachment to the next box -> PART B, 1.1.1
+* If user do not want to read this text file -> output "output_2" 
+-> loop back to input "onStart" of "File loop" box -> PART A, 1.1.1
+
+3.2 End of loop
+When the loop go through all of the attachment files, next turn output "out_end_loop" will be trigger instead of "out_file_loop"
+-> "End list" box informs user that this is the end of the list and ask if the user want to start going through it again.
+-> "Confirm" box
+* If user agrees -> output "output_1" -> Loop back to input "onStart" of "File loop" box -> PART A, 1.1.1
+* If user do not want to continue going through video attachment -> output "output_2"
+-> output "output_reply" of timeline box "audio attachment"
+-> "Check other type" box check if there is other type of attachment
+-> In this case there is only one type of attachment -> output "reply" 
+-> "Reply" box -> PART C
+
 B. Open the file
 - "Play Sound" box plays the audio file through speaker -> loop back to PART A
 - "Tactile Head" box to stop the "Say Text File" if user do not want to listen to that anymore. 
+
 C. Reply to email
-			See PART 2, 1.1.1 PART C
+See PART 2, 1.1.1 PART C
 			
 1.1.5 Stop
 -> output "output_4" of "Switch case"
+
 -> "Reply" box (See PART 2, 1.1.1 PART C)
 
 1.2 If there is multiple types of attachment.
 -> output "onShowList" of "Extract attachment" box
 
 -> "Subsribe to choose_attachment" box, "show" box and "Say Attachment options" say box
-	1.2.1 "Subscribe to choose_attachment" box: gets signal when user choose attachment type he/she wants to open through tablet.
-			-> output "onEvent" ->
-				- input "onStop" of "Speech Reco." to stop Pepper from listening to voice input (see 1.2.3 below)
-				- output the name of the choosen type to "Switch case" box and start the process based on the type (see PART 2, 1.1)
-	1.2.2 "show" box: shows all types of attachmemnt on the tablet 
-	1.2.3 "Say Attachment options": Say all types of the attachment out loud
-			-> "Speech Reco." listens to user chosen type of attachment to open through voice command.
-			-> output "onWordRecognized" ->
-				- output the name of the choosen type to "Switch case" box and start the process based on the type (see PART 2, 1.1)
-				- loops back to input "onStop" to stop Pepper from listening to voice input (see 1.2.3 below)
+
+1.2.1 "Subscribe to choose_attachment" box: gets signal when user choose attachment type he/she wants to open through tablet.
+-> output "onEvent" ->
+- input "onStop" of "Speech Reco." to stop Pepper from listening to voice input (see 1.2.3 below)
+- output the name of the choosen type to "Switch case" box and start the process based on the type (see PART 2, 1.1)
+
+1.2.2 "show" box: shows all types of attachmemnt on the tablet 
+
+1.2.3 "Say Attachment options": Say all types of the attachment out loud
+-> "Speech Reco." listens to user chosen type of attachment to open through voice command.
+
+-> output "onWordRecognized" ->
+- output the name of the choosen type to "Switch case" box and start the process based on the type (see PART 2, 1.1)
+- loops back to input "onStop" to stop Pepper from listening to voice input (see 1.2.3 below)
