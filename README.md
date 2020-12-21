@@ -23,19 +23,24 @@ retrieves the user id and pass and login to the mail box. It then checks if ther
 
 	2.1.1 If user want to read new mails
 	-> output "output_1" of "Confirm" box
+	
 	-> input "mail_to_read" of "Check mail box" loop through all mails, store the email's uid into memory and return the emails' sender and subject to the output. 
-	-> output "out_mail_to_read"     
+	
+	-> output "out_mail_to_read" 
+	
 	-> "Say mail info" box say it out and ask user to confirm if they want to read this email
-		* If user agrees -> output "output_1" 
+	* If user agrees -> output "output_1" 
 		-> "Get mail" box to fetch the whole message of the chosen email and downloads all attachment if any -> SECTION 3
 		-> "output_1" also go back to input "reset_Counter" of "Check mail" box so the loop can start again later.
-		* If user do not want to read this email -> "Check mail" box's output "output_2" -> "Check mail" box's input "mail_to_read" to start the loops again. The loops keep going until the user finishs reading all the new mails or stop the programs.
+	* If user do not want to read this email -> "Check mail" box's output "output_2" -> "Check mail" box's input "mail_to_read" to start the loops again. The loops keep going until the user finishs reading all the new mails or stop the programs.
 	2.1.2 If user do not want to read new mails:
-		-> output "output_2" of "Confirm" box
-		-> "Say: Send email" box ask if user want to send new mail
-		-> "Confirm" box
-			* If user agrees -> output "output_1" -> "Run send email" box run "Send email" application
-			* If user do not want to send email -> output "output_2" -> Stop this "Read email" application and go back to "Start up" application
+	-> output "output_2" of "Confirm" box
+		
+	-> "Say: Send email" box ask if user want to send new mail
+		
+	-> "Confirm" box
+	* If user agrees -> output "output_1" -> "Run send email" box run "Send email" application
+	* If user do not want to send email -> output "output_2" -> Stop this "Read email" application and go back to "Start up" application
     
 2.2 If there is no new mail, the programs ask if the user want to read previous mails or send new mail
 	-> "Check mail" box triggers output "onNoMail" informs user that he/she has no mail and ask if they want to read previous mail 
