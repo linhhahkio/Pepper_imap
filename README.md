@@ -91,8 +91,9 @@ retrieves the user id and pass and login to the mail box. It then checks if ther
 -> output "output_1" of "Switch case" -> "Text attachment" timeline box
 
 A. Loop process
-		1. "Show attachment list" box shows the list of all attachment on the tablet (html/attachment/text/index.html)
-		2.  
+
+	1. "Show attachment list" box shows the list of all attachment on the tablet (html/attachment/text/index.html)
+	2.  
 		- "Subscribe to choose_text" box gets signal if user chooses the text file he/she wants to open through tablet -> "File loop" box (See A.3 below)
 		- "Read text" box ask if user want to read these text files. -> "Confirm" box
 		* If user agrees ->  output "output_1" -> "File loop" box (See A.3 below)
@@ -117,14 +118,14 @@ A. Loop process
 				-> In this case there is only one type of attachment -> output "reply" 
 				-> "Reply" box -> PART C
 B. Open the file
-		- "Say Text File" says the text file out loud. -> loop back to PART A
-		- "Tactile Head" box to stop the "Say Text File" if user do not want to listen to that anymore.
-		- "Show Text File" shows the text file on the tablet. 
+	- "Say Text File" says the text file out loud. -> loop back to PART A
+	- "Tactile Head" box to stop the "Say Text File" if user do not want to listen to that anymore.
+	- "Show Text File" shows the text file on the tablet. 
 C. Reply to email
-		- "Reply" box: ask if user want to reply to this email.4
-		- "Confirm" box
-			* If user agrees -> output "output_1" -> "Run send email" box : run "Send emai" application
-			* If user do not want to reply to the email -> output "output_2" -> Loop back to "Check mail" box to start checking mail again (see PART 1, 2.1)  
+	- "Reply" box: ask if user want to reply to this email.4
+	- "Confirm" box
+	* If user agrees -> output "output_1" -> "Run send email" box : run "Send emai" application
+	* If user do not want to reply to the email -> output "output_2" -> Loop back to "Check mail" box to start checking mail again (see PART 1, 2.1)  
 			
 1.1.2 Audio
 	-> output "output_2" of "Switch case" -> "Audio attachment" timeline box
