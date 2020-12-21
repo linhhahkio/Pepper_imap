@@ -61,14 +61,17 @@ retrieves the user id and pass and login to the mail box. It then checks if ther
 	-> "Get mail_multipart" box gets the value of isMultipart to check if the email contains any attachment
 	
 	-> "Switch case" box
+	
 	3.1 Case "1" There is attachment
-		-> "Ask about attachment" box inform user that the email contains attachment and ask if he/she want to see it.
-		-> "Confirm" box
-		* If user agrees -> output "output_1"
+	-> "Ask about attachment" box inform user that the email contains attachment and ask if he/she want to see it.
+	
+	-> "Confirm" box
+	
+	* If user agrees -> output "output_1"
 		+ "Animated Say" box Pepper informs user that attachments might be heavy and might require sometime to load
 		+ "Get attachment" box gets the list of attachments from the memory.
 			-> "Extract attachment" box -> see PART 2
-		* If user do not want to open attachment -> output "output_2"
+	* If user do not want to open attachment -> output "output_2"
 			-> "Reply" box -> PART C
       
 ## PART 2: Open attachments
