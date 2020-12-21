@@ -87,8 +87,10 @@ retrieves the user id and pass and login to the mail box. It then checks if ther
 -> "Switch case" proceeds programs depends on attachments' type
 
 1.1.1 Text
-	-> output "output_1" of "Switch case" -> "Text attachment" timeline box
-	A. Loop process
+
+-> output "output_1" of "Switch case" -> "Text attachment" timeline box
+
+A. Loop process
 		1. "Show attachment list" box shows the list of all attachment on the tablet (html/attachment/text/index.html)
 		2.  
 		- "Subscribe to choose_text" box gets signal if user chooses the text file he/she wants to open through tablet -> "File loop" box (See A.3 below)
@@ -114,11 +116,11 @@ retrieves the user id and pass and login to the mail box. It then checks if ther
 				-> "Check other type" box check if there is other type of attachment
 				-> In this case there is only one type of attachment -> output "reply" 
 				-> "Reply" box -> PART C
-		B. Open the file
+B. Open the file
 		- "Say Text File" says the text file out loud. -> loop back to PART A
 		- "Tactile Head" box to stop the "Say Text File" if user do not want to listen to that anymore.
 		- "Show Text File" shows the text file on the tablet. 
-		C. Reply to email
+C. Reply to email
 		- "Reply" box: ask if user want to reply to this email.4
 		- "Confirm" box
 			* If user agrees -> output "output_1" -> "Run send email" box : run "Send emai" application
