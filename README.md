@@ -85,6 +85,7 @@ retrieves the user id and pass and login to the mail box. It then checks if ther
 -> output "onType"
 
 -> "Switch case" proceeds programs depends on attachments' type
+
 1.1.1 Text
 	-> output "output_1" of "Switch case" -> "Text attachment" timeline box
 	A. Loop process
@@ -122,6 +123,7 @@ retrieves the user id and pass and login to the mail box. It then checks if ther
 		- "Confirm" box
 			* If user agrees -> output "output_1" -> "Run send email" box : run "Send emai" application
 			* If user do not want to reply to the email -> output "output_2" -> Loop back to "Check mail" box to start checking mail again (see PART 1, 2.1)  
+			
 1.1.2 Audio
 	-> output "output_2" of "Switch case" -> "Audio attachment" timeline box
 	A. Loop process: Similar to process to SECTION 1.1.1
@@ -155,6 +157,7 @@ retrieves the user id and pass and login to the mail box. It then checks if ther
 	- "Tactile Head" box to stop the "Say Text File" if user do not want to listen to that anymore. 
 	C. Reply to email
 	See PART 2, 1.1.1 PART C
+	
 1.1.3 Image
 -> output "output_3" of "Switch case" 
 -> "Images attachment" box and "Next_Previous_command" dialog box
@@ -163,6 +166,7 @@ retrieves the user id and pass and login to the mail box. It then checks if ther
 	1. to view next/previous picture 
 	2. to go back to attachment overview page
 	3. to end the reading attachment programme
+	
 1.1.4 Video
 -> output "output_5" of "Switch case" -> "Video attachment" timeline box
 A. Loop process: Similar to process to SECTION 1.1.1
